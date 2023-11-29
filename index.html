@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mi Portafolio</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mi Portafolio</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido/a a mi portafolio</h2>
+    <!-- Contenido de la sección de inicio -->
+  </section>
+
+  <section id="acerca-de-mi">
+    <h2>Acerca de mí</h2>
+    <div class="acerca-de-mi-contenido">
+      <div class="texto">
+        <p>Hola, mi nombre es Laura Victoria Zambrano. Soy Ing. Industrial de la Universidad Militar. Me encanta la música y hago parte del grupo de Música Colombiana de la Universidad. Me caracterizo por ser una persona proactiva, responsable, eficiente, con gran capacidad de colaboración y disposición a aprender.</p>
+      </div>
+      <div class="foto">
+        <img src="img/Mi foto.jpg" alt="Mi Foto">
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section id="trabajos">
+    <h2>Trabajos</h2>
+    <h3>Practicante de mercadeo</h3>
+    <p>Durante mi tiempo como practicante en el área de Inteligencia de Mercados, tuve la oportunidad de desarrollar y aplicar sólidas habilidades en la extracción, minería y análisis de datos, así como en el seguimiento de indicadores clave. Mi función principal consistía en apoyar los procesos relacionados con la optimización de la estrategia empresarial, generando un impacto positivo en los indicadores clave del negocio desde la captación de usuarios hasta la desafiliación.</p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Manejo de Microsoft Office (Word, Excel, PowerPoint, Outlook).</li>
+      <li>Experiencia en análisis de datos y uso de herramientas como Excel para tabulación y gráficos.</li>
+      <li>Conocimiento básico de SAP, Solidworks, Power BI y RStudio.</li>
+    </ul>
+  </section>
+
+ 
+
+  <footer>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Encuéntrame en:</p>
+      <img src="img/instagram-icon.png" alt="Instagram" class="Icono-img"> Instagram: @vicky5454
+      <img src="img/telefono.png" alt="Celular" class="Icono-img"> Celular: 123456
+
+      <p><em>Si requieres que te contacte, dejame tu información en el siguiente formulario:</em></p>
+      <form action="victoriazambranoo@gmail.com" method="get" class="formulario" id="form">
+        <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+        </div>
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              required
+            />
+        </div>
+        <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" id="submit">Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"> </p>
+      </form>
+
+      <p>&copy; 2023 Mi Portafolio</p>
+    </section>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

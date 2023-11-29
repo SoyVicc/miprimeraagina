@@ -1,0 +1,298 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color:lightsalmon;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Alinea los elementos al centro */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.nav-bar {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+      display: none;
+      text-align: center;
+      width: 100%; /* Ajusta el ancho al 100% para ocupar toda la pantalla */
+      background-color: #333; /* Color de fondo del menú */
+      position: absolute;
+      top: 60px; /* Altura del encabezado */
+  }
+
+  .nav-bar ul {
+      padding: 0;
+  }
+
+  .nav-bar ul li {
+      display: block;
+      margin: 0;
+      padding: 10px 0; /* Añade espacio alrededor de cada elemento de la lista */
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .menu-open .nav-bar {
+      display: block;
+  }
+}
+
+#acerca-de-mi {
+  display: flex;
+  justify-content: center;
+}
+
+.acerca-de-mi-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texto {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 20px; /* Ajusta el margen derecho para separar el texto de la imagen */
+}
+
+.foto {
+  flex: 1; /* Ocupa el mismo espacio que el texto */
+}
+
+.foto img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original */
+  max-width: 100px; /* Establece un ancho máximo */
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .foto {
+    margin-top: 20px; /* Añade espacio arriba de la imagen en dispositivos más pequeños */
+  }
+}
+
+.Icono-img {
+  width: 20px; /* Establece el ancho deseado */
+  height: auto; /* Establece la altura deseada */
+  margin-right: 0px; /* Ajusta el margen derecho según tus preferencias */
+  max-width: 20px;
+  border-radius: 0px;
+}
+   /* ------------- Encabezado Contacto ------------- */
+footer{
+  background-color: lightsalmon;
+  color: black;
+  display:block;
+  flex-direction: column;
+  align-items: center;}
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: beige;
+    border: 0px solid #d6d9dc;
+    border-radius: 10px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 30px 40px 75px;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[ type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 50%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+
+    .form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+    margin-left: 120px;
+  
+
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+      }
+    }
+  
+
+
+
+
