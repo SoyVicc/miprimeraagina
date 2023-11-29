@@ -292,7 +292,10 @@ footer{
       }
     }
   
-
+.greeting{
+  color: white;
+  text-align: center;
+}
 
 
 
